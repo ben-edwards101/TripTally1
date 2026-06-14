@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy — TripFolio</title>
+  <meta name="description" content="TripFolio keeps your trips on your iPhone. No accounts, no analytics, no developer servers — the only network use is Apple Maps." />
+  <meta name="theme-color" content="#F7F5F0" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#131421" media="(prefers-color-scheme: dark)" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100;1,9..144,400..700,0..100&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">T</span>
+        <span>TripFolio</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#features">Features</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <span class="eyebrow">Privacy Policy</span>
+      <h1>No cloud. No account.<br/><span style="font-style:italic; color:var(--accent); font-variation-settings:'SOFT' 100, 'opsz' 144;">Just your trips.</span></h1>
+      <p>Every trip stays on your device. No tracking, no developer servers, no analytics.</p>
+      <div class="pills">
+        <span class="pill">On‑device</span>
+        <span class="pill">No account</span>
+        <span class="pill">Apple Maps only</span>
+        <span class="pill">Export JSON &amp; GPX</span>
+      </div>
+      <p style="margin-top: 22px; font-family: var(--font-mono); font-size: 13px; color: var(--ink-faint);">Last updated: 14 June 2026</p>
+    </div>
+  </div>
+
+  <main class="prose">
+
+    <h2>The short version</h2>
+    <p>TripFolio collects nothing, sends nothing to the developer, and shares nothing. Your trips stay on your iPhone. The only part of the app that touches the network is the map, which uses Apple Maps. The developer can't see any of your data.</p>
+
+    <h2>What this app does with your data</h2>
+    <p>TripFolio is a personal trip logger that runs on your device. Everything you enter — trip titles, dates, stops, place names, nights, ratings, notes, distances, your home address and settings — is stored locally on your iPhone using the operating system's standard local storage. Photos you attach are referenced from your photo library. None of this is uploaded anywhere.</p>
+
+    <h2>What we collect</h2>
+    <p>Nothing. TripFolio has no backend of its own. There is no account to create, no login, no email address requested, and no usage telemetry. The developer has no server and no access to anything you enter into the app.</p>
+
+    <h2>Maps and place names</h2>
+    <p>TripFolio uses Apple's MapKit to draw the map view and to convert coordinates into readable place names (and addresses you type into coordinates). To do this, MapKit sends map and geocoding requests to Apple. Those requests are handled by Apple under <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a> and contain only what's needed to render a map or resolve a place — not your saved list of trips. Apart from these Apple Maps requests, TripFolio makes no network calls; aside from the map, the app behaves identically in airplane mode.</p>
+
+    <h2>Photos and location</h2>
+    <p>If you add a cover photo or stop photos, TripFolio accesses them through the system photo picker and stores a reference locally — it does not copy your library or upload anything. If you use a current‑location or home feature, that location is used on your device to log the trip and is stored locally with it.</p>
+
+    <h2>Third‑party services</h2>
+    <p>TripFolio does not include any third‑party analytics platforms, advertising networks, or crash‑reporting services, and contains no trackers of any kind. The only external service it talks to is Apple Maps, a first‑party Apple framework, as described above.</p>
+
+    <h2>Children's privacy</h2>
+    <p>TripFolio is rated 4+ and is appropriate for all ages. Because the app collects no personal information from anyone, it complies with the Children's Online Privacy Protection Act (COPPA) and equivalent regulations in other jurisdictions.</p>
+
+    <h2>Deleting your data</h2>
+    <p>To permanently delete everything TripFolio has stored, uninstall the app. There is no data held on any developer server that needs to be requested, exported, or erased. Once the app is gone from your device, the data is gone with it — so use <strong>Settings → Export all data as JSON</strong> first if you want to keep a copy.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy ever changes, the updated version will be posted at this URL and the date at the top will be revised. Because the app collects no data, any future change would only narrow the policy further, not expand it.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this policy, email <a href="mailto:0xB182@gmail.com">0xB182@gmail.com</a>.</p>
+
+  </main>
+
+  <footer>
+    <div class="container foot-inner">
+      <div class="foot-meta">
+        © <span id="year">2026</span> TripFolio · Made in Australia
+      </div>
+      <div class="foot-links">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:0xB182@gmail.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
